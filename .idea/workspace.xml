@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="" />
+    <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SipsewanaInstitute(Hibernet).iml" beforeDir="false" afterPath="$PROJECT_DIR$/SipsewanaInstitute(Hibernet).iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/LoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +25,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="22MZiEyggohVORDQQnnAdVg3l5V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,11 +37,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my/hibernateAssignmentCopy/Royal_Institute_Property_File_Configuration" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="F:/Softwares/JAVA/Libries/jfoenix-8.0.8.jar" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.23648648" />
     <property name="project.structure.side.proportion" value="0.41551724" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gdse 58\SipsewanaInstitute(Hibernet)\src\assets\image" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,11 +60,22 @@
       <updated>1639649544659</updated>
       <workItem from="1639649546318" duration="4637000" />
       <workItem from="1639805740818" duration="12577000" />
-      <workItem from="1639892168902" duration="3464000" />
+      <workItem from="1639892168902" duration="7821000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
