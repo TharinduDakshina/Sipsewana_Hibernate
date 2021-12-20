@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SipsewanaInstitute(Hibernet).iml" beforeDir="false" afterPath="$PROJECT_DIR$/SipsewanaInstitute(Hibernet).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LoginViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/LoginForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/DashBordForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashBordForm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +18,7 @@
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -39,7 +36,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/Softwares/JAVA/Libries/jfoenix-8.0.8.jar" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Thogakade" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.23648648" />
@@ -61,6 +59,7 @@
       <workItem from="1639649546318" duration="4637000" />
       <workItem from="1639805740818" duration="12577000" />
       <workItem from="1639892168902" duration="7821000" />
+      <workItem from="1639988141234" duration="5845000" />
     </task>
     <servers />
   </component>
@@ -77,5 +76,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
