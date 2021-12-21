@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/styleLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/DashBordForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashBordForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegisterViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,7 @@
       <workItem from="1639892168902" duration="7821000" />
       <workItem from="1639988141234" duration="8168000" />
       <workItem from="1640070518693" duration="4885000" />
-      <workItem from="1640095335400" duration="2285000" />
+      <workItem from="1640095335400" duration="3612000" />
     </task>
     <servers />
   </component>
