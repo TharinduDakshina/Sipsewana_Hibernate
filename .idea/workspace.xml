@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controller/RegisterViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/updateStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/RegistrationProgramViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/UpdateCourseViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/RegistrationProgramView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/UpdateCourseView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/RegistrationStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/RegistrationStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/UpdateViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UpdateView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UpdateView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +24,9 @@
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -60,7 +69,9 @@
       <workItem from="1639892168902" duration="7821000" />
       <workItem from="1639988141234" duration="8168000" />
       <workItem from="1640070518693" duration="4885000" />
-      <workItem from="1640095335400" duration="3612000" />
+      <workItem from="1640095335400" duration="8270000" />
+      <workItem from="1640150303353" duration="1346000" />
+      <workItem from="1640190187071" duration="3860000" />
     </task>
     <servers />
   </component>
