@@ -14,7 +14,7 @@
 
 <AnchorPane fx:id="registrationDashBord" prefHeight="803.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterViewController">
    <children>
-      <Label layoutX="284.0" layoutY="25.0" prefHeight="38.0" prefWidth="163.0" text="Registration" underline="true">
+      <Label layoutX="322.0" layoutY="19.0" prefHeight="38.0" prefWidth="163.0" text="Registration" underline="true">
          <font>
             <Font name="Cambria Math" size="30.0" />
          </font>
@@ -75,6 +75,11 @@
             <JFXButton layoutX="239.0" layoutY="473.0" onAction="#btnAddCourse" prefHeight="31.0" prefWidth="82.0" styleClass="buttonAddCourses" stylesheets="@../assets/css/RegistrationStyle.css" text="Add" />
             <JFXButton layoutX="333.0" layoutY="473.0" onAction="#btnRemoveCouse" styleClass="buttonRemoveCourses" stylesheets="@../assets/css/RegistrationStyle.css" text="Remove" />
             <JFXButton layoutX="45.0" layoutY="536.0" onAction="#registerStudentOnAction" prefHeight="38.0" prefWidth="134.0" styleClass="buttonAddCourses" stylesheets="@../assets/css/RegistrationStyle.css" text="Register" />
+            <Label layoutX="29.0" layoutY="15.0" prefHeight="38.0" prefWidth="163.0" text="Student" underline="true">
+               <font>
+                  <Font name="Cambria Math" size="30.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <Button layoutX="31.0" layoutY="80.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="82.0" styleClass="student" stylesheets="@../assets/css/RegistrationStyle.css" text="Student">
