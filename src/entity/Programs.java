@@ -1,6 +1,6 @@
 package entity;
 
-public class Programs {
+public class Programs implements SuperEntity {
     private String id;
     private String program;
     private String duration;

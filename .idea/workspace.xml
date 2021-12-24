@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="" />
+    <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/SuperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/SuperDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Programs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Programs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Registration.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,10 +19,10 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="CSS File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,12 +40,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Thogakade" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my/DanuHibernate" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.23648648" />
     <property name="project.structure.side.proportion" value="0.41551724" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -62,6 +70,11 @@
       <workItem from="1640150303353" duration="1346000" />
       <workItem from="1640190187071" duration="8309000" />
       <workItem from="1640203087760" duration="76000" />
+      <workItem from="1640203461057" duration="172000" />
+      <workItem from="1640239946543" duration="1821000" />
+      <workItem from="1640243661420" duration="762000" />
+      <workItem from="1640314428009" duration="604000" />
+      <workItem from="1640351803902" duration="3501000" />
     </task>
     <servers />
   </component>

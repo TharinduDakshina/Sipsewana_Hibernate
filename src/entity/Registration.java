@@ -5,7 +5,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.util.Date;
 
-public class registration {
+public class Registration implements SuperEntity {
     private String regNo;
     private Date date;
     private double totalFee;
@@ -18,10 +18,10 @@ public class registration {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "program_Id" , referencedColumnName = "id" , nullable = false)
     private Programs programs;
-    public registration() {
+    public Registration() {
     }
 
-    public registration(String regNo, Date date, double totalFee, Student student, Programs programs) {
+    public Registration(String regNo, Date date, double totalFee, Student student, Programs programs) {
         this.regNo = regNo;
         this.date = date;
         this.totalFee = totalFee;
