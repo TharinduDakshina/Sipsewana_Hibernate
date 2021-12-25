@@ -1,4 +1,2 @@
-package dao.custom.impl;
-
-public class RegistrationDAOImpl {
+package dao.custom.impl;public class RegistrationDAOImpl {
 }

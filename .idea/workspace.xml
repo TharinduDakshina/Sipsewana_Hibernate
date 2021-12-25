@@ -3,11 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/SuperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/SuperDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/RegistrationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Programs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Programs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/updateStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/updateStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DashBordFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DashBordFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/DetailsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DetailsViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegisterViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/UpdateViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/DashBordForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashBordForm.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/DeailsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DetailsView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UpdateView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UpdateView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +28,10 @@
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
         <option value="CSS File" />
+        <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -53,6 +62,20 @@
       <recent name="D:\gdse 58\SipsewanaInstitute(Hibernet)\src\assets\image" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
+      <module name="SipsewanaInstitute(Hibernet)" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppInitializer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,7 +97,9 @@
       <workItem from="1640239946543" duration="1821000" />
       <workItem from="1640243661420" duration="762000" />
       <workItem from="1640314428009" duration="604000" />
-      <workItem from="1640351803902" duration="3501000" />
+      <workItem from="1640351803902" duration="6389000" />
+      <workItem from="1640363431725" duration="2334000" />
+      <workItem from="1640407461207" duration="5531000" />
     </task>
     <servers />
   </component>

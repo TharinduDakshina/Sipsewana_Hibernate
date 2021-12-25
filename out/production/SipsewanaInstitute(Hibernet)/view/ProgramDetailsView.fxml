@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="programDetailContent" prefHeight="635.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProgramDetailsViewController">
+   <children>
+      <Label layoutX="39.0" layoutY="25.0" prefHeight="38.0" prefWidth="163.0" text="Program" underline="true">
+         <font>
+            <Font name="Cambria Math" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="139.0" text="Program Id :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="220.0" text="Program Name :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="28.0" layoutY="296.0" text="Program Duration : ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="377.0" text="Program Fee  : ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txtProgramId" layoutX="203.0" layoutY="137.0" onKeyReleased="#SearchOnAction" prefHeight="31.0" prefWidth="502.0" promptText="Search" />
+      <TextField fx:id="txtProgramName" editable="false" layoutX="203.0" layoutY="217.0" prefHeight="31.0" prefWidth="502.0" />
+      <TextField fx:id="txtProgramDuration" editable="false" layoutX="203.0" layoutY="297.0" prefHeight="31.0" prefWidth="502.0" />
+      <TextField fx:id="txtProgramFee" editable="false" layoutX="203.0" layoutY="377.0" prefHeight="31.0" prefWidth="502.0" />
+      <JFXButton buttonType="RAISED" layoutX="570.0" layoutY="494.0" onAction="#clearOnAction" prefHeight="31.0" prefWidth="94.0" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Clear" />
+   </children>
+</AnchorPane>

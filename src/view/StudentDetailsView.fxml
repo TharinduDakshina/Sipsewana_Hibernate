@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="537.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentDetailsViewController">
+   <children>
+      <Label layoutX="20.0" layoutY="19.0" prefHeight="34.0" prefWidth="122.0" text="Student" underline="true">
+         <font>
+            <Font name="Cambria Math" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="90.0" prefHeight="34.0" prefWidth="44.0" text="Id  :" />
+      <Label layoutX="39.0" layoutY="144.0" prefHeight="34.0" prefWidth="72.0" text="Name  :" />
+      <Label layoutX="38.0" layoutY="337.0" prefHeight="34.0" prefWidth="72.0" text="Gender  :" />
+      <Label layoutX="25.0" layoutY="206.0" prefHeight="34.0" prefWidth="88.0" text="Address  :" />
+      <Label layoutX="35.0" layoutY="269.0" prefHeight="34.0" prefWidth="78.0" text="Contact  :" />
+      <TextField fx:id="txtId" layoutX="110.0" layoutY="92.0" onKeyReleased="#searchOnAction" prefHeight="31.0" prefWidth="370.0" promptText="Search" />
+      <TextField fx:id="txtName" editable="false" layoutX="111.0" layoutY="148.0" prefHeight="31.0" prefWidth="370.0" />
+      <TextField fx:id="txtAddress" editable="false" layoutX="111.0" layoutY="209.0" prefHeight="31.0" prefWidth="370.0" />
+      <TextField fx:id="txtContact" editable="false" layoutX="111.0" layoutY="272.0" prefHeight="31.0" prefWidth="370.0" />
+      <TextField fx:id="txtGender" editable="false" layoutX="111.0" layoutY="341.0" prefHeight="31.0" prefWidth="370.0" />
+      <TableView fx:id="tblPrograms" layoutX="508.0" layoutY="137.0" prefHeight="249.0" prefWidth="236.0">
+         <columns>
+            <TableColumn fx:id="colProgramsName" editable="false" prefWidth="233.0" text="Programs" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="586.0" layoutY="454.0" onAction="#clearOnAction" prefHeight="31.0" prefWidth="94.0" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Clear" />
+   </children>
+</AnchorPane>
