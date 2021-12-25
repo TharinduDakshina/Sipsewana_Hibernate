@@ -16,27 +16,8 @@ import java.net.URL;
 public class RegisterViewController {
 
     public AnchorPane registrationDashBord;
-    public JFXTextField txtName;
-    public JFXTextField txtAddress;
-    public JFXTextField txtContact;
-    public Label lblStudentId;
+    public AnchorPane changeContent;
     public Label lblDate;
-    public RadioButton genderMale;
-    public ToggleGroup Gender;
-    public RadioButton genderFemale;
-    public RadioButton genderOther;
-    public JFXComboBox cmbCourses;
-    public TableView tblCourse;
-    public TableColumn colCourseName;
-
-    public void btnAddCourse(ActionEvent event) {
-    }
-
-    public void btnRemoveCouse(ActionEvent event) {
-    }
-
-    public void registerStudentOnAction(ActionEvent event) {
-    }
 
     public void backOnAction(ActionEvent event) throws IOException {
         URL resource = getClass().getResource("../view/DashBordForm.fxml");
@@ -44,5 +25,15 @@ public class RegisterViewController {
         Scene scene=new Scene(load);
         Stage window=(Stage) registrationDashBord.getScene().getWindow();
         window.setScene(scene);
+    }
+
+    public void selectStudentRegOnAction(ActionEvent event) throws IOException {
+        this.changeContent.getChildren().clear();
+        this.changeContent.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/RegisterStudentView.fxml")));
+    }
+
+    public void selectProgramRegOnAction(ActionEvent event) throws IOException {
+        this.changeContent.getChildren().clear();
+        this.changeContent.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/RegistrationProgramView.fxml")));
     }
 }

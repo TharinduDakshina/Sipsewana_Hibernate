@@ -5,7 +5,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
-public class UpdateCourseViewController {
+public class UpdateProgramsViewController {
     public ComboBox cmbProgramsId;
     public TextField txtProgramName;
     public TextField txtProgramDuration;

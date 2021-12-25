@@ -3,18 +3,50 @@
   <component name="ChangeListManager">
     <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/updateStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/updateStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DashBordFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DashBordFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/DetailsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/DetailsViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginViewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/AppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/css/RegistrationStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/css/styleLogin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/css/updateStyles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/LoginForm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/addStudent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/updateDeatils.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/viewDeatils.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/DashBordFormController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/DetailsViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/ProgramDetailsViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/RegisterViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/RegistrationProgramViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/StudentDetailsViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/UpdateCourseViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/UpdateViewController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/DaoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/DoaTye.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/SuperDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/custom/ProgramDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/custom/RegistrationDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/custom/StudentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/custom/impl/ProgramDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/custom/impl/RegistrationDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/dao/custom/impl/StudentDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/entity/Programs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/entity/Registration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/entity/SuperEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/util/FactoryConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/DashBordForm.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/DetailsView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/ProgramDetailsView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/RegisterView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/RegistrationProgramView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/StudentDetailsView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/UpdateCourseView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UpdateProgramsView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/UpdateView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/RegisterViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/UpdateCourseViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateProgramsViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/UpdateViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/DashBordForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DashBordForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/DeailsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/DetailsView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/LoginForm.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/RegisterView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UpdateCourseView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/UpdateView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UpdateView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +81,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/my/DanuHibernate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/image" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -99,7 +131,7 @@
       <workItem from="1640314428009" duration="604000" />
       <workItem from="1640351803902" duration="6389000" />
       <workItem from="1640363431725" duration="2334000" />
-      <workItem from="1640407461207" duration="5531000" />
+      <workItem from="1640407461207" duration="11215000" />
     </task>
     <servers />
   </component>

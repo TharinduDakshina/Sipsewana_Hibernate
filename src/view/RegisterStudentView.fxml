@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="studentContextBord" prefHeight="635.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterStudentViewController">
+   <children>
+      <Label layoutX="63.0" layoutY="129.0" prefHeight="28.0" prefWidth="73.0" text="Name :" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="200.0" text="Address :">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="272.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="139.0" layoutY="122.0" prefHeight="31.0" prefWidth="495.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="135.0" layoutY="189.0" prefHeight="31.0" prefWidth="495.0" />
+      <JFXTextField fx:id="txtContact" layoutX="132.0" layoutY="264.0" prefHeight="31.0" prefWidth="495.0" />
+      <Label fx:id="lblStudentId" alignment="CENTER" layoutX="628.0" layoutY="53.0" prefHeight="38.0" prefWidth="113.0" style="-fx-border-color: black; -fx-border-radius: 25;" text="0001">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="335.0" text="Gender :">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="genderMale" layoutX="151.0" layoutY="339.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="A" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="genderFemale" layoutX="266.0" layoutY="339.0" mnemonicParsing="false" text="Female" toggleGroup="$A" />
+      <RadioButton fx:id="genderOther" layoutX="397.0" layoutY="339.0" mnemonicParsing="false" text="Other" toggleGroup="$A" />
+      <Label layoutX="40.0" layoutY="398.0" text="Courses :">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCourses" layoutX="132.0" layoutY="395.0" prefHeight="31.0" prefWidth="268.0" />
+      <TableView fx:id="tblCourse" layoutX="522.0" layoutY="398.0" prefHeight="200.0" prefWidth="163.0">
+         <columns>
+            <TableColumn fx:id="colCourseName" prefWidth="162.0" text="Course Names" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="249.0" layoutY="483.0" onAction="#btnAddCourse" prefHeight="31.0" prefWidth="82.0" styleClass="buttonAddCourses" stylesheets="@../assets/css/RegistrationStyle.css" text="Add" />
+      <JFXButton layoutX="343.0" layoutY="483.0" onAction="#btnRemoveCouse" styleClass="buttonRemoveCourses" stylesheets="@../assets/css/RegistrationStyle.css" text="Remove" />
+      <JFXButton layoutX="55.0" layoutY="579.0" onAction="#registerStudentOnAction" prefHeight="38.0" prefWidth="134.0" styleClass="buttonAddCourses" stylesheets="@../assets/css/RegistrationStyle.css" text="Register" />
+      <Label layoutX="39.0" layoutY="25.0" prefHeight="38.0" prefWidth="163.0" text="Student" underline="true">
+         <font>
+            <Font name="Cambria Math" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

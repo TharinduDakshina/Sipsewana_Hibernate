@@ -17,18 +17,8 @@ import java.net.URL;
 public class UpdateViewController {
 
     public AnchorPane updateDashBord;
-    public AnchorPane UpdateStudentDashBord;
-    public ComboBox cmbSelectStudentId;
-    public TextField txtStudentName;
-    public TextField txtContact;
-    public TextField txtGender;
-    public ComboBox cmbSelectCourse;
-    public TableView tblCourse;
-    public TableColumn colCourseName;
+    public AnchorPane changeContent;
 
-    public void updateOnAction(ActionEvent event) {
-
-    }
 
     public void backOnAction(ActionEvent event) throws IOException {
         URL resource = getClass().getResource("../view/DashBordForm.fxml");
@@ -36,5 +26,15 @@ public class UpdateViewController {
         Scene scene=new Scene(load);
         Stage window=(Stage) updateDashBord.getScene().getWindow();
         window.setScene(scene);
+    }
+
+    public void studentToChangeOnAction(ActionEvent event) throws IOException {
+        this.changeContent.getChildren().clear();
+        this.changeContent.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/UpdateStudentView.fxml")));
+    }
+
+    public void programeToOnAction(ActionEvent event) throws IOException {
+        this.changeContent.getChildren().clear();
+        this.changeContent.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/UpdateProgramsView.fxml")));
     }
 }

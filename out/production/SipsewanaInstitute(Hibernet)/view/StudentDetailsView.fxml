@@ -32,10 +32,5 @@
          </columns>
       </TableView>
       <JFXButton buttonType="RAISED" layoutX="586.0" layoutY="454.0" onAction="#clearOnAction" prefHeight="31.0" prefWidth="94.0" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Clear" />
-      <JFXButton buttonType="RAISED" layoutX="98.0" layoutY="457.0" onAction="#backOnAction" styleClass="backButton" stylesheets="@../assets/css/updateStyles.css" text="&lt;--Back" textFill="#f5f4f4">
-         <font>
-            <Font name="System Bold" size="17.0" />
-         </font>
-      </JFXButton>
    </children>
 </AnchorPane>
