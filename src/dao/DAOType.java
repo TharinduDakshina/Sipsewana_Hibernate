@@ -1,5 +1,5 @@
 package dao;
 
-public enum DoaTye {
+public enum DAOType {
     STUDENT,PROGRAMS, REGISTRATION
 }

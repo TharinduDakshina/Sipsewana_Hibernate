@@ -12,12 +12,24 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class RegisterViewController {
 
     public AnchorPane registrationDashBord;
     public AnchorPane changeContent;
     public Label lblDate;
+
+    public void initialize(){
+        setDate();
+    }
+
+    private void setDate() {
+        Date date=new Date();
+        SimpleDateFormat f=new SimpleDateFormat("YYYY-MM-dd ");
+        lblDate.setText(f.format(date));
+    }
 
     public void backOnAction(ActionEvent event) throws IOException {
         URL resource = getClass().getResource("../view/DashBordForm.fxml");

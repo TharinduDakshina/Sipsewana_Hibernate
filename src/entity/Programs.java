@@ -1,7 +1,15 @@
 package entity;
 
+import javax.lang.model.element.Name;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Programs implements SuperEntity {
+    @Id
     private String id;
+    @Column(name = "Program Name")
     private String program;
     private String duration;
     private double fee;

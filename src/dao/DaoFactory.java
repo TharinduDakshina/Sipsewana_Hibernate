@@ -1,5 +1,8 @@
 package dao;
 
+import dao.custom.impl.ProgramDAOImpl;
+import dao.custom.impl.StudentDAOImpl;
+
 public class DaoFactory {
     private static DaoFactory daoFactory;
 
@@ -7,12 +10,12 @@ public class DaoFactory {
         return (null==daoFactory)? daoFactory=new DaoFactory():daoFactory;
     }
 
-    /*public  <T extends SuperDao> T getDao(DoaTye doaTye){
+    public  <T extends SuperDao> T getDAO(DAOType doaTye){
         switch (doaTye){
-            *//*case  PROGRAMS: return (T) new ProgramesDaoImpl();
-            case  STUDENT: return (T) new ProgramesDaoImpl();
-            case  REGISTRATION: return (T) new ProgramesDaoImpl();
-            default:return null;*//*
+            case  PROGRAMS: return (T) new ProgramDAOImpl();
+            case  STUDENT: return (T) new StudentDAOImpl();
+           /* case  REGISTRATION: return (T) new ProgramesDaoImpl();*/
+            default:return null;
         }
-    }*/
+    }
 }

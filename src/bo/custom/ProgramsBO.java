@@ -1,10 +1,11 @@
 package bo.custom;
 
+import bo.SupperBO;
 import dto.ProgramDTO;
 
 import java.util.List;
 
-public interface ProgramsBO {
+public interface ProgramsBO extends SupperBO {
     public boolean add(ProgramDTO programDTO) throws Exception;
 
     public List<ProgramDTO> findAll() throws Exception;

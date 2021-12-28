@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="studentContextBord" prefHeight="635.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterStudentViewController">
    <children>
       <Label layoutX="63.0" layoutY="129.0" prefHeight="28.0" prefWidth="73.0" text="Name :" textAlignment="RIGHT">
@@ -49,12 +48,12 @@
       </RadioButton>
       <RadioButton fx:id="genderFemale" layoutX="266.0" layoutY="339.0" mnemonicParsing="false" text="Female" toggleGroup="$A" />
       <RadioButton fx:id="genderOther" layoutX="397.0" layoutY="339.0" mnemonicParsing="false" text="Other" toggleGroup="$A" />
-      <Label layoutX="40.0" layoutY="398.0" text="Courses :">
+      <Label layoutX="19.0" layoutY="398.0" prefHeight="28.0" prefWidth="101.0" text="Programs :">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <JFXComboBox fx:id="cmbCourses" layoutX="132.0" layoutY="395.0" prefHeight="31.0" prefWidth="268.0" />
+      <JFXComboBox fx:id="cmbCourses" layoutX="132.0" layoutY="395.0" prefHeight="31.0" prefWidth="268.0" promptText="Select Program" />
       <TableView fx:id="tblCourse" layoutX="522.0" layoutY="398.0" prefHeight="200.0" prefWidth="163.0">
          <columns>
             <TableColumn fx:id="colCourseName" prefWidth="162.0" text="Course Names" />
