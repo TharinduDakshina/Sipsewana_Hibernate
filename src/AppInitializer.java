@@ -1,5 +1,6 @@
 
 import entity.Programs;
+import entity.Registration;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,11 +8,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import util.FactoryConfiguration;
 
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 
 import static javafx.application.Application.launch;
 
@@ -30,7 +33,7 @@ public class AppInitializer extends Application {
         primaryStage.setTitle("Dashboard");
         primaryStage.show();
     }
-}
+
 
     /*public static void main(String[] args) {
         Programs entity=new Programs();
@@ -40,14 +43,24 @@ public class AppInitializer extends Application {
         entity.setDuration("sada");
         entity.setFee(63464);
 
-        Session session = FactoryConfiguration.getInstance().openSession();
+        *//*Session session = FactoryConfiguration.getInstance().openSession();
         Transaction transaction = session.beginTransaction();
         session.save(entity);
+        transaction.commit();
+        session.close();*//*
+
+        Session session = FactoryConfiguration.getInstance().openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Registration> list=null;
+        Query registration = session.createQuery("from Registration order by regNo DESC ");
+        list=registration.getResultList();
+        System.out.println(list.isEmpty());
+        System.out.println(list);
         transaction.commit();
         session.close();
     }*/
 
-
+}
 
 
 /*

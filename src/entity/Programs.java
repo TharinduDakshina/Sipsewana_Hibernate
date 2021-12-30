@@ -13,7 +13,7 @@ public class Programs implements SuperEntity {
     private String duration;
     private double fee;
 
-    @OneToMany(mappedBy = "programs")
+    @OneToMany(mappedBy = "programs",cascade = CascadeType.ALL)
     private List<Registration> registrations=new ArrayList();
 
 
@@ -74,6 +74,17 @@ public class Programs implements SuperEntity {
 
     public List<Registration> getRegistrations() {
         return registrations;
+    }
+
+    @Override
+    public String toString() {
+        return "Programs{" +
+                "id='" + id + '\'' +
+                ", program='" + program + '\'' +
+                ", duration='" + duration + '\'' +
+                ", fee=" + fee +
+                ", registrations=" + registrations +
+                '}';
     }
 }
 

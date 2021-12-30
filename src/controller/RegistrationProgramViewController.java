@@ -25,7 +25,7 @@ public class RegistrationProgramViewController {
         double fee=Double.valueOf(txtProgramFee.getText());
 
         try {
-            if (programsBO.add(new ProgramDTO(
+            if (programsBO. add(new ProgramDTO(
                 id,
                 name,
                 duration,

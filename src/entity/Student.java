@@ -18,7 +18,7 @@ public class Student implements SuperEntity{
     private int contact;
     private String gender;
 
-    @OneToMany(mappedBy = "student")
+    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     private List<Registration> registrations=new ArrayList ();
 
     public Student() {

@@ -3,18 +3,19 @@ package dao.custom.impl;
 import dao.custom.ProgramDAO;
 import entity.Programs;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.query.Query;
 import util.FactoryConfiguration;
 
 import javax.persistence.Id;
+import java.util.List;
+import java.util.Queue;
 
 public class ProgramDAOImpl implements ProgramDAO {
+    private SessionFactory sessionFactory;
     @Override
     public boolean save(Programs entity) throws Exception {
-        /*System.out.println(entity.getId());
-        System.out.println(entity.getProgram());
-        System.out.println(entity.getDuration());*/
-
         Session session = FactoryConfiguration.getInstance().openSession();
         Transaction transaction = session.beginTransaction();
         session.save(entity);
@@ -31,5 +32,23 @@ public class ProgramDAOImpl implements ProgramDAO {
     @Override
     public boolean delete(Id id) throws Exception {
         return false;
+    }
+
+    @Override
+    public List<Programs> getAll() throws Exception {
+        try {
+            Session session= FactoryConfiguration.getInstance().openSession();
+            Transaction transaction = session.beginTransaction();
+
+            List<Programs> list=null;
+            Query program = session.createQuery("from Programs");
+            list=program.getResultList();
+            transaction.commit();
+            session.close();
+            return list;
+        }catch (Exception e){
+            System.out.println("ProgramDAOImpl getAll");
+        }
+        return null;
     }
 }

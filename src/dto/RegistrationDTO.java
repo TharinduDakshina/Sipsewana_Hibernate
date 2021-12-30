@@ -1,51 +1,49 @@
 package dto;
 
-import java.util.Date;
-
 public class RegistrationDTO {
-    private String regNo;
-    private Date date;
-    private double totalFee;
+    private int regNo;
+    private String date;
+    private String fee;
 
     public RegistrationDTO() {
     }
 
-    public RegistrationDTO(String regNo, Date date, double totalFee) {
+    public RegistrationDTO(int regNo, String date, String fee) {
         this.setRegNo(regNo);
         this.setDate(date);
-        this.setTotalFee(totalFee);
+        this.setFee(fee);
     }
 
-    public String getRegNo() {
+    public int getRegNo() {
         return regNo;
     }
 
-    public void setRegNo(String regNo) {
+    public void setRegNo(int regNo) {
         this.regNo = regNo;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public double getTotalFee() {
-        return totalFee;
+    public String getFee() {
+        return fee;
     }
 
-    public void setTotalFee(double totalFee) {
-        this.totalFee = totalFee;
+    public void setFee(String fee) {
+        this.fee = fee;
     }
 
     @Override
     public String toString() {
         return "RegistrationDTO{" +
-                "regNo='" + regNo + '\'' +
-                ", date=" + date +
-                ", totalFee=" + totalFee +
+                "regNo=" + regNo +
+                ", date='" + date + '\'' +
+                ", fee='" + fee + '\'' +
                 '}';
     }
 }

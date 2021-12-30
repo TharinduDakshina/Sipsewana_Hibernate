@@ -992,152 +992,52 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </user>
     <table id="291" parent="274" name="employee_detail"/>
     <table id="292" parent="274" name="employee_salary"/>
-    <table id="293" parent="282" name="programs"/>
-    <table id="294" parent="282" name="registration"/>
-    <table id="295" parent="282" name="student"/>
-    <column id="296" parent="291" name="EmpId">
+    <column id="293" parent="291" name="EmpId">
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="297" parent="291" name="Full_Name">
+    <column id="294" parent="291" name="Full_Name">
       <DataType>varchar(50)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="298" parent="291" name="ManagerId">
+    <column id="295" parent="291" name="ManagerId">
       <DataType>varchar(6)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="299" parent="291" name="JoiningDate">
+    <column id="296" parent="291" name="JoiningDate">
       <DataType>date|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="300" parent="291" name="City">
+    <column id="297" parent="291" name="City">
       <DataType>varchar(30)|0s</DataType>
       <Position>5</Position>
     </column>
-    <key id="301" parent="291" name="PRIMARY">
+    <key id="298" parent="291" name="PRIMARY">
       <ColNames>EmpId</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="302" parent="292" name="EmpId">
+    <column id="299" parent="292" name="EmpId">
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="303" parent="292" name="Project">
+    <column id="300" parent="292" name="Project">
       <DataType>varchar(6)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="304" parent="292" name="salary">
+    <column id="301" parent="292" name="salary">
       <DataType>double|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="305" parent="292" name="Variable">
+    <column id="302" parent="292" name="Variable">
       <DataType>double|0s</DataType>
       <Position>4</Position>
     </column>
-    <key id="306" parent="292" name="PRIMARY">
+    <key id="303" parent="292" name="PRIMARY">
       <ColNames>EmpId</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="307" parent="293" name="id">
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="308" parent="293" name="duration">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="309" parent="293" name="fee">
-      <DataType>double|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="310" parent="293" name="program">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <key id="311" parent="293" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="312" parent="294" name="regNo">
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="313" parent="294" name="date">
-      <DataType>datetime(6)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="314" parent="294" name="totalFee">
-      <DataType>double|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="315" parent="294" name="program_Id">
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="316" parent="294" name="student_Id">
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <foreign-key id="317" parent="294" name="FKcqhhaxrtxfkh8av87i1c28rty">
-      <ColNames>program_Id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>programs</RefTableName>
-    </foreign-key>
-    <foreign-key id="318" parent="294" name="FK3jy9ogtc02sdp9yplijnjq7yd">
-      <ColNames>student_Id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>student</RefTableName>
-    </foreign-key>
-    <index id="319" parent="294" name="FKcqhhaxrtxfkh8av87i1c28rty">
-      <ColNames>program_Id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="320" parent="294" name="FK3jy9ogtc02sdp9yplijnjq7yd">
-      <ColNames>student_Id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="321" parent="294" name="PRIMARY">
-      <ColNames>regNo</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="322" parent="295" name="id">
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="323" parent="295" name="address">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="324" parent="295" name="contact">
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="325" parent="295" name="gender">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <column id="326" parent="295" name="name">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>5</Position>
-    </column>
-    <key id="327" parent="295" name="PRIMARY">
-      <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>

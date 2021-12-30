@@ -13,4 +13,6 @@ public interface ProgramsBO extends SupperBO {
     public boolean delete(String s) throws Exception;
 
     public boolean update(ProgramDTO programDTO) throws Exception;
+
+    List<ProgramDTO> getAll() throws Exception;
 }

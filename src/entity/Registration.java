@@ -1,14 +1,13 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 public class Registration implements SuperEntity{
     @Id
     private int regNo;
-    private Date date;
-    private double totalFee;
+    private String date;
+    private String fee;
 
 
     @ManyToOne(cascade = CascadeType.ALL)
@@ -23,38 +22,42 @@ public class Registration implements SuperEntity{
     public Registration() {
     }
 
-    public Registration(int regNo, Date date, double totalFee) {
-        this.regNo = regNo;
-        this.date = date;
-        this.totalFee = totalFee;
+    public Registration(int regNo, String date, String fee) {
+        this.setRegNo(regNo);
+        this.setDate(date);
+        this.setFee(fee);
     }
 
-    public Registration(int regNo, Date date, double totalFee, Student student, Programs programs) {
-        this.regNo = regNo;
-        this.date = date;
-        this.totalFee = totalFee;
-        this.student = student;
-        this.programs = programs;
+    public Registration(int regNo, String date, String fee, Student student, Programs programs) {
+        this.setRegNo(regNo);
+        this.setDate(date);
+        this.setFee(fee);
+        this.setStudent(student);
+        this.setPrograms(programs);
     }
 
-    public int getRegNo() {return regNo;}
+    public int getRegNo() {
+        return regNo;
+    }
 
-    public void setRegNo(int regNo) {this.regNo = regNo;}
+    public void setRegNo(int regNo) {
+        this.regNo = regNo;
+    }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public double getTotalFee() {
-        return totalFee;
+    public String getFee() {
+        return fee;
     }
 
-    public void setTotalFee(double totalFee) {
-        this.totalFee = totalFee;
+    public void setFee(String fee) {
+        this.fee = fee;
     }
 
     public Student getStudent() {
@@ -71,5 +74,16 @@ public class Registration implements SuperEntity{
 
     public void setPrograms(Programs programs) {
         this.programs = programs;
+    }
+
+    @Override
+    public String toString() {
+        return "Registration{" +
+                "regNo=" + regNo +
+                ", date='" + date + '\'' +
+                ", fee='" + fee + '\'' +
+                ", student=" + student +
+                ", programs=" + programs +
+                '}';
     }
 }

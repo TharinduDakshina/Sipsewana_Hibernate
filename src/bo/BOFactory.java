@@ -1,6 +1,7 @@
 package bo;
 
 import bo.custom.impl.ProgramsBOImpl;
+import bo.custom.impl.RegistrationBOImpl;
 import bo.custom.impl.StudentBOImpl;
 
 public class BOFactory {
@@ -18,7 +19,7 @@ public class BOFactory {
 
             case PROGRAMS:return (T) new ProgramsBOImpl();
 
-           /* case REGISTRATION:return (T) new RegistrationBOImpl();*/
+            case REGISTRATION:return (T) new RegistrationBOImpl();
 
             default: return null;
         }
