@@ -1,13 +1,36 @@
 package entity;
 
-public class Student implements SuperEntity {
+import org.hibernate.mapping.Array;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.*;
+import java.util.List;
+
+@Entity
+public class Student implements SuperEntity{
+    @Id
     private String id;
     private String name;
     private String address;
     private int contact;
     private String gender;
 
+    @OneToMany(mappedBy = "student")
+    private List<Registration> registrations=new ArrayList ();
+
     public Student() {
+    }
+
+    public Student(String id, String name, String address, int contact, String gender, List<Registration> registrations) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.contact = contact;
+        this.gender = gender;
+        this.setRegistrations(registrations);
     }
 
     public Student(String id, String name, String address, int contact, String gender) {
@@ -57,5 +80,25 @@ public class Student implements SuperEntity {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public List<Registration> getRegistrations() {
+        return registrations;
+    }
+
+    public void setRegistrations(List<Registration> registrations) {
+        this.registrations = registrations;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", contact=" + contact +
+                ", gender='" + gender + '\'' +
+                ", registrations=" + registrations +
+                '}';
     }
 }

@@ -11,20 +11,13 @@ public class RegisterStudentViewController {
     public JFXTextField txtName;
     public JFXTextField txtAddress;
     public JFXTextField txtContact;
-    public Label lblStudentId;
     public RadioButton genderMale;
     public ToggleGroup Gender;
     public RadioButton genderFemale;
     public RadioButton genderOther;
     public JFXComboBox cmbCourses;
-    public TableView tblCourse;
-    public TableColumn colCourseName;
+    public JFXTextField txtId;
 
-    public void btnAddCourse(ActionEvent event) {
-    }
-
-    public void btnRemoveCouse(ActionEvent event) {
-    }
 
     public void registerStudentOnAction(ActionEvent event) {
     }

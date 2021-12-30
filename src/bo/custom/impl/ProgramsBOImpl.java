@@ -15,7 +15,7 @@ public class ProgramsBOImpl implements ProgramsBO {
 
     @Override
     public boolean add(ProgramDTO programDTO) throws Exception {
-
+        System.out.println(programDTO);
         return programDAO.save(new Programs(
                 programDTO.getId(),
                 programDTO.getProgram(),

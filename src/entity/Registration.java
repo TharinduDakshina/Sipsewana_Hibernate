@@ -1,41 +1,45 @@
 package entity;
 
-import javax.persistence.CascadeType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
 
-public class Registration implements SuperEntity {
-    private String regNo;
+@Entity
+public class Registration implements SuperEntity{
+    @Id
+    private int regNo;
     private Date date;
     private double totalFee;
 
+
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "Student_Id", referencedColumnName = "id" , nullable = false)
+    @JoinColumn(name = "student_Id", referencedColumnName = "id" , nullable = false)
     private Student student;
 
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "program_Id" , referencedColumnName = "id" , nullable = false)
     private Programs programs;
+
     public Registration() {
     }
 
-    public Registration(String regNo, Date date, double totalFee, Student student, Programs programs) {
+    public Registration(int regNo, Date date, double totalFee) {
         this.regNo = regNo;
         this.date = date;
         this.totalFee = totalFee;
-        this.setStudent(student);
-        this.setPrograms(programs);
     }
 
-    public String getRegNo() {
-        return regNo;
-    }
-
-    public void setRegNo(String regNo) {
+    public Registration(int regNo, Date date, double totalFee, Student student, Programs programs) {
         this.regNo = regNo;
+        this.date = date;
+        this.totalFee = totalFee;
+        this.student = student;
+        this.programs = programs;
     }
+
+    public int getRegNo() {return regNo;}
+
+    public void setRegNo(int regNo) {this.regNo = regNo;}
 
     public Date getDate() {
         return date;

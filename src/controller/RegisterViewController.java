@@ -1,7 +1,5 @@
 package controller;
 
-import com.jfoenix.controls.JFXComboBox;
-import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

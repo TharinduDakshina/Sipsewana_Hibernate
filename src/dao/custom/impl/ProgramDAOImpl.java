@@ -11,6 +11,10 @@ import javax.persistence.Id;
 public class ProgramDAOImpl implements ProgramDAO {
     @Override
     public boolean save(Programs entity) throws Exception {
+        /*System.out.println(entity.getId());
+        System.out.println(entity.getProgram());
+        System.out.println(entity.getDuration());*/
+
         Session session = FactoryConfiguration.getInstance().openSession();
         Transaction transaction = session.beginTransaction();
         session.save(entity);
