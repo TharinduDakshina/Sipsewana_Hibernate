@@ -1,14 +1,26 @@
 package bo.custom.impl;
 
 import bo.custom.StudentBO;
+import dao.DAOType;
+import dao.DaoFactory;
+import dao.custom.impl.StudentDAOImpl;
 import dto.StudentDTO;
+import entity.Student;
 
 import java.util.List;
 
 public class StudentBOImpl implements StudentBO {
+    StudentDAOImpl studentDAO= DaoFactory.getInstance().getDAO(DAOType.STUDENT);
+
     @Override
     public boolean add(StudentDTO studentDTO) throws Exception {
-        return false;
+        return studentDAO.save(new Student(
+                studentDTO.getId(),
+                studentDTO.getName(),
+                studentDTO.getAddress(),
+                studentDTO.getContact(),
+                studentDTO.getGender()
+        ));
     }
 
     @Override

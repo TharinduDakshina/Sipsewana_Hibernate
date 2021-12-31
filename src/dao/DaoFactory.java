@@ -1,6 +1,7 @@
 package dao;
 
 import dao.custom.impl.ProgramDAOImpl;
+import dao.custom.impl.RegistrationDAOImpl;
 import dao.custom.impl.StudentDAOImpl;
 
 public class DaoFactory {
@@ -14,7 +15,7 @@ public class DaoFactory {
         switch (doaTye){
             case  PROGRAMS: return (T) new ProgramDAOImpl();
             case  STUDENT: return (T) new StudentDAOImpl();
-           /* case  REGISTRATION: return (T) new ProgramesDaoImpl();*/
+            case  REGISTRATION: return (T) new RegistrationDAOImpl();
             default:return null;
         }
     }

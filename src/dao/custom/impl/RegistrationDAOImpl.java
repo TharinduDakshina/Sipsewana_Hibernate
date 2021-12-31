@@ -15,7 +15,12 @@ import java.util.Queue;
 public class RegistrationDAOImpl implements RegistrationDAO {
     @Override
     public boolean save(Registration entity) throws Exception {
-        return false;
+        Session session=FactoryConfiguration.getInstance().openSession();
+        Transaction transaction = session.beginTransaction();
+        session.save(entity);
+        transaction.commit();
+        session.close();
+        return true;
     }
 
     @Override

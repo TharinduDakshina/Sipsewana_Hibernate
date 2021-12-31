@@ -7,7 +7,7 @@ public class Registration implements SuperEntity{
     @Id
     private int regNo;
     private String date;
-    private String fee;
+    private double fee;
 
 
     @ManyToOne(cascade = CascadeType.ALL)
@@ -22,13 +22,13 @@ public class Registration implements SuperEntity{
     public Registration() {
     }
 
-    public Registration(int regNo, String date, String fee) {
+    public Registration(int regNo, String date, double fee) {
         this.setRegNo(regNo);
         this.setDate(date);
         this.setFee(fee);
     }
 
-    public Registration(int regNo, String date, String fee, Student student, Programs programs) {
+    public Registration(int regNo, String date, double fee, Student student, Programs programs) {
         this.setRegNo(regNo);
         this.setDate(date);
         this.setFee(fee);
@@ -52,11 +52,11 @@ public class Registration implements SuperEntity{
         this.date = date;
     }
 
-    public String getFee() {
+    public double getFee() {
         return fee;
     }
 
-    public void setFee(String fee) {
+    public void setFee(double fee) {
         this.fee = fee;
     }
 

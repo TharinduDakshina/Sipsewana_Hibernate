@@ -17,17 +17,7 @@ public class RegisterViewController {
 
     public AnchorPane registrationDashBord;
     public AnchorPane changeContent;
-    public Label lblDate;
 
-    public void initialize(){
-        setDate();
-    }
-
-    private void setDate() {
-        Date date=new Date();
-        SimpleDateFormat f=new SimpleDateFormat("YYYY-MM-dd ");
-        lblDate.setText(f.format(date));
-    }
 
     public void backOnAction(ActionEvent event) throws IOException {
         URL resource = getClass().getResource("../view/DashBordForm.fxml");
