@@ -3,14 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane fx:id="UpdateStudentDashBord" prefHeight="512.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateStudentViewController">
+<AnchorPane fx:id="UpdateStudentDashBord" prefHeight="512.0" prefWidth="894.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateStudentViewController">
    <children>
       <Label layoutX="19.0" layoutY="31.0" prefHeight="28.0" prefWidth="173.0" text="Update Sutudent" underline="true">
          <font>
@@ -22,7 +21,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="80.0" layoutY="290.0" prefHeight="27.0" prefWidth="90.0" text="Gender :">
+      <Label layoutX="80.0" layoutY="330.0" prefHeight="27.0" prefWidth="90.0" text="Gender :">
          <font>
             <Font size="18.0" />
          </font>
@@ -32,30 +31,36 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="77.0" layoutY="240.0" prefHeight="27.0" prefWidth="90.0" text="Contact :">
+      <Label layoutX="77.0" layoutY="280.0" prefHeight="27.0" prefWidth="90.0" text="Contact :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
       <ComboBox fx:id="cmbSelectStudentId" layoutX="162.0" layoutY="100.0" onAction="#searchOnAction" prefHeight="31.0" prefWidth="249.0" promptText="Select Id" />
-      <TextField fx:id="txtStudentName" editable="false" layoutX="162.0" layoutY="172.0" prefHeight="31.0" prefWidth="249.0" />
-      <TextField fx:id="txtContact" editable="false" layoutX="162.0" layoutY="239.0" prefHeight="31.0" prefWidth="249.0" />
-      <TextField fx:id="txtGender" editable="false" layoutX="163.0" layoutY="290.0" prefHeight="31.0" prefWidth="249.0" />
-      <Label layoutX="59.0" layoutY="353.0" prefHeight="27.0" prefWidth="90.0" text="Program :">
+      <TextField fx:id="txtStudentName" layoutX="162.0" layoutY="172.0" prefHeight="31.0" prefWidth="249.0" />
+      <TextField fx:id="txtContact" layoutX="162.0" layoutY="279.0" prefHeight="31.0" prefWidth="249.0" />
+      <TextField fx:id="txtGender" layoutX="163.0" layoutY="330.0" prefHeight="31.0" prefWidth="249.0" />
+      <Label layoutX="59.0" layoutY="393.0" prefHeight="27.0" prefWidth="90.0" text="Program :">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <ComboBox fx:id="cmbSelectCourse" layoutX="162.0" layoutY="351.0" prefHeight="31.0" prefWidth="249.0" promptText="Select Program" />
-      <TableView fx:id="tblCourse" layoutX="553.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0">
-         <columns>
-            <TableColumn fx:id="colCourseName" prefWidth="199.0" text="Programe Name" />
-         </columns>
-      </TableView>
+      <ComboBox fx:id="cmbSelectCourse" layoutX="162.0" layoutY="391.0" prefHeight="31.0" prefWidth="249.0" promptText="Select Program" />
       <Button layoutX="732.0" layoutY="450.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="31.0" prefWidth="90.0" styleClass="updateButton" stylesheets="@../assets/css/updateStyles.css" text="Update" textFill="WHITE">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
+      <ImageView fitHeight="312.0" fitWidth="361.0" layoutX="465.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/updateStudent.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="6.0" layoutY="224.0" prefHeight="27.0" prefWidth="149.0" text="Student Address :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" layoutX="162.0" layoutY="222.0" prefHeight="31.0" prefWidth="249.0" />
    </children>
 </AnchorPane>

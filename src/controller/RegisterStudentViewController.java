@@ -99,7 +99,7 @@ public class RegisterStudentViewController {
 
     public void registerStudentOnAction(ActionEvent event) throws Exception {
        try {
-           int regNo=1;
+           int regNo=3;
            String date=String.valueOf(LocalDate.now());
 
            String pId= String.valueOf(cmbProgramId.getValue());
@@ -132,6 +132,8 @@ public class RegisterStudentViewController {
                    selectRegDTOList
            );
            if (rest){
+               clearContent();
+               new Alert(Alert.AlertType.CONFIRMATION,"Student added..!").show();
                System.out.println("Save");
            }else {
                System.out.println("no");
@@ -141,19 +143,10 @@ public class RegisterStudentViewController {
            System.out.println("Exception Error registrationView controller");
        }
 
-
-       /* if (registrationBO.add(new RegistrationDTO(
-                regNo,date,fee
-        )) || studentBO.add(new StudentDTO(
-                sId,sName,sAddress,contact,sGender
-        ))){
-            clearContent();
-            new Alert(Alert.AlertType.INFORMATION,"added Student").show();
-        }*/
     }
 
     private StudentDTO selectStudentDTO() {
-        String sId=txtId.getId();
+        String sId=txtId.getText();
         String sName=txtName.getText();
         String sAddress=txtAddress.getText();
         int contact=Integer.valueOf(txtContact.getText());
@@ -181,5 +174,7 @@ public class RegisterStudentViewController {
         txtName.clear();
         txtContact.clear();
         txtAddress.clear();
+        txtDuration.clear();
+        txtFee.clear();
     }
 }
