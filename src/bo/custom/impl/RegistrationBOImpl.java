@@ -9,6 +9,7 @@ import dto.RegistrationDTO;
 import dto.StudentDTO;
 import entity.Registration;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RegistrationBOImpl implements RegistrationBO {
@@ -39,7 +40,22 @@ public class RegistrationBOImpl implements RegistrationBO {
     }
 
     @Override
-    public List<ProgramDTO> getAll() throws Exception {
-        return null;
+    public List<RegistrationDTO> getAll() throws Exception {
+        List<RegistrationDTO> registrationDTOS=new ArrayList<>();
+        List<Registration> registrations=registrationDAO.getAll();
+        for (Registration tm:registrations) {
+            registrationDTOS.add(makeRegistrationDTO(tm));
+        }
+        return registrationDTOS;
+    }
+
+    private RegistrationDTO makeRegistrationDTO(Registration tm) {
+        return new RegistrationDTO(
+                tm.getRegNo(),
+                tm.getDate(),
+                tm.getFee(),
+                tm.getStudent(),
+                tm.getPrograms()
+        );
     }
 }

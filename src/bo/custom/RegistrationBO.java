@@ -15,5 +15,5 @@ public interface RegistrationBO extends SupperBO {
 
     public boolean update(RegistrationDTO registrationDTO) throws Exception;
 
-    List<ProgramDTO> getAll() throws Exception;
+    List<RegistrationDTO> getAll() throws Exception;
 }

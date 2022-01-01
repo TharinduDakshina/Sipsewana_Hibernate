@@ -2,6 +2,7 @@ package dao.custom.impl;
 
 import dao.custom.ProgramDAO;
 import entity.Programs;
+import javafx.scene.control.Alert;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -26,6 +27,17 @@ public class ProgramDAOImpl implements ProgramDAO {
 
     @Override
     public boolean update(Programs entity) throws Exception {
+        try {
+            Session session = FactoryConfiguration.getInstance().openSession();
+            Transaction transaction = session.beginTransaction();
+            session.update(entity);
+            transaction.commit();
+            session.close();
+            return true;
+        }catch (Exception e){
+            System.out.println("ProgramDAOImpl update exception error");
+            new Alert(Alert.AlertType.ERROR,"System Error").show();
+        }
         return false;
     }
 

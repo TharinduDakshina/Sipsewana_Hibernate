@@ -35,6 +35,19 @@ public class RegistrationDAOImpl implements RegistrationDAO {
 
     @Override
     public List<Registration> getAll() throws Exception {
+        try {
+            Session session = FactoryConfiguration.getInstance().openSession();
+            Transaction transaction = session.beginTransaction();
+
+            List<Registration> list=null;
+            Query registrationDetails= session.createQuery("from Registration ");
+            list=registrationDetails.getResultList();
+            transaction.commit();
+            session.close();
+            return list;
+        }catch (Exception e){
+            System.out.println("registrationDAOImpl getAll");
+        }
         return null;
     }
 

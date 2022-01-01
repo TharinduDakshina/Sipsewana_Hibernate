@@ -14,15 +14,17 @@
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/registrationMain.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/updateDeatils.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/updateMain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/updateStudent.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/assets/image/viewDeatils.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/BOFactory$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/BOFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/BOType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/CustomerBOImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/SupperBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/AddRegistrationBO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/ProgramsBO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/RegistrationBO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/StudentBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/impl/AddRegistrationBOImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/impl/ProgramsBOImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/impl/RegistrationBOImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/bo/custom/impl/StudentBOImpl.class" beforeDir="false" />
@@ -65,14 +67,20 @@
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/UpdateProgramsView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/UpdateStudentView.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/UpdateView.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/StudentBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/StudentBO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/StudentBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/StudentBOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/RegisterStudentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterStudentViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/RegistrationBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/RegistrationBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/ProgramsBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/ProgramsBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/RegistrationBOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bo/custom/impl/RegistrationBOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ProgramDetailsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ProgramDetailsViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StudentDetailsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentDetailsViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/UpdateProgramsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateProgramsViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/UpdateStudentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateStudentViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/ProgramDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/ProgramDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/StudentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/UpdateStudentView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UpdateStudentView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/ProgramDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/ProgramDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/custom/impl/RegistrationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Programs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Programs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ProgramDetailsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProgramDetailsView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/StudentDetailsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentDetailsView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/UpdateProgramsView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UpdateProgramsView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +95,8 @@
         <option value="JavaFXApplication" />
         <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -196,6 +204,8 @@
       <workItem from="1640943804520" duration="13832000" />
       <workItem from="1640972685001" duration="1755000" />
       <workItem from="1640974487377" duration="5139000" />
+      <workItem from="1640979898588" duration="144000" />
+      <workItem from="1641009383500" duration="16462000" />
     </task>
     <servers />
   </component>

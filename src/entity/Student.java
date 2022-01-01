@@ -1,16 +1,14 @@
 package entity;
 
+import dto.StudentDTO;
 import org.hibernate.mapping.Array;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.*;
 import java.util.List;
 
 @Entity
-public class Student implements SuperEntity{
+public class Student extends StudentDTO implements SuperEntity{
     @Id
     private String id;
     private String name;

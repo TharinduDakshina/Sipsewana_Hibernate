@@ -38,7 +38,12 @@ public class ProgramsBOImpl implements ProgramsBO {
 
     @Override
     public boolean update(ProgramDTO programDTO) throws Exception {
-        return false;
+        return programDAO.update(new Programs(
+                programDTO.getId(),
+                programDTO.getProgram(),
+                programDTO.getDuration(),
+                programDTO.getFee()
+        ));
     }
 
     @Override
@@ -54,7 +59,10 @@ public class ProgramsBOImpl implements ProgramsBO {
 
     private ProgramDTO makeProgramsDTO(Programs tm) {
         return new ProgramDTO(
-                tm.getId(), tm.getProgram(), tm.getDuration(), tm.getFee()
+                tm.getId(),
+                tm.getProgram(),
+                tm.getDuration(),
+                tm.getFee()
         );
     }
 }

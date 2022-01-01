@@ -66,14 +66,6 @@ public class UpdateStudentViewController {
     }
 
     public void updateOnAction(ActionEvent event) {
-        List<StudentDTO> studentDataList=new ArrayList<>();
-        studentDataList.add(new StudentDTO(
-                (String) cmbSelectStudentId.getValue(),
-                txtStudentName.getText(),
-                txtAddress.getText(),
-                Integer.valueOf(txtContact.getText()),
-                txtGender.getText()
-        ));
 
         try {
 
@@ -98,10 +90,13 @@ public class UpdateStudentViewController {
         List<StudentDTO> all=null;
         all =studentBO.getAll();
         for (StudentDTO temp:all) {
-            txtStudentName.setText(temp.getName());
-            txtAddress.setText(temp.getAddress());
-            txtContact.setText(String.valueOf(temp.getContact()));
-            txtGender.setText(temp.getGender());
+            if (temp.getId().equals(cmbSelectStudentId.getValue())){
+                txtStudentName.setText(temp.getName());
+                txtAddress.setText(temp.getAddress());
+                txtContact.setText(String.valueOf(temp.getContact()));
+                txtGender.setText(temp.getGender());
+            }
+
         }
     }
 }
