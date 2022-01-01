@@ -5,6 +5,7 @@ import bo.BOType;
 import bo.custom.AddRegistrationBO;
 import bo.custom.ProgramsBO;
 import bo.custom.RegistrationBO;
+import bo.custom.StudentBO;
 import bo.custom.impl.RegistrationBOImpl;
 import bo.custom.impl.StudentBOImpl;
 import com.jfoenix.controls.JFXComboBox;
@@ -35,17 +36,19 @@ public class RegisterStudentViewController {
     public RadioButton genderFemale;
     public RadioButton genderOther;
     public JFXComboBox cmbCourses;
-    public JFXTextField txtId;
     public Label lblRegNumber;
     public Label lblDate;
     public JFXComboBox cmbProgramId;
     public JFXTextField txtDuration;
     public JFXTextField txtFee;
+    public Label lblStudentId;
 
     ProgramsBO programsBO = BOFactory.getInstance().getBO(BOType.PROGRAMS);
     ObservableList<String> programList= FXCollections.observableArrayList();
     ObservableList<String> programIdList= FXCollections.observableArrayList();
     AddRegistrationBO addRegistrationBO=BOFactory.getInstance().getBO(BOType.ADDREGISTRATION);
+    RegistrationBO registrationBO=BOFactory.getInstance().getBO(BOType.REGISTRATION);
+    StudentBO studentBO=BOFactory.getInstance().getBO(BOType.STUDENT);
 
 
     public void initialize(){
@@ -63,8 +66,44 @@ public class RegisterStudentViewController {
             e.printStackTrace();
         }
 
-        /*generateREINNo();*/
+        try {
+            generateREINNo();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            loadStudentId();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         setDate();
+    }
+
+    private void loadStudentId() throws Exception {
+        List<StudentDTO> regData=studentBO.getAll();
+        String studentId=null;
+        for (StudentDTO tmp:regData) {
+            studentId=tmp.getId();
+        }
+        lblStudentId.setText(setNumber(studentId));
+    }
+
+    private String setNumber(String studentId) {
+        if (studentId!=null){
+            int tempId=Integer.parseInt(studentId.split("-")[1]);
+            tempId=tempId+1;
+            if (tempId<=9){
+                return "S-00"+tempId;
+            }else if (tempId<=99){
+                return "S-0"+tempId;
+            }else {
+                return "S-"+tempId;
+            }
+        }else {
+            return "S-001";
+        }
     }
 
     private void loadProgramsId() throws Exception {
@@ -83,8 +122,13 @@ public class RegisterStudentViewController {
         lblDate.setText(f.format(date));
     }
 
-    private void generateREINNo() {
-
+    private void generateREINNo() throws Exception {
+        List<RegistrationDTO> regData=registrationBO.getAll();
+        int regNo=0;
+        for (RegistrationDTO tmp:regData) {
+            regNo=tmp.getRegNo();
+        }
+        lblRegNumber.setText(String.valueOf(regNo+1));
     }
 
     private void loadPrograms() throws Exception {
@@ -99,7 +143,7 @@ public class RegisterStudentViewController {
 
     public void registerStudentOnAction(ActionEvent event) throws Exception {
        try {
-           int regNo=3;
+           int regNo=Integer.valueOf(lblRegNumber.getText());
            String date=String.valueOf(LocalDate.now());
 
            String pId= String.valueOf(cmbProgramId.getValue());
@@ -135,6 +179,7 @@ public class RegisterStudentViewController {
                clearContent();
                new Alert(Alert.AlertType.CONFIRMATION,"Student added..!").show();
                System.out.println("Save");
+               generateREINNo();
            }else {
                System.out.println("no");
            }
@@ -146,7 +191,7 @@ public class RegisterStudentViewController {
     }
 
     private StudentDTO selectStudentDTO() {
-        String sId=txtId.getText();
+        String sId=lblStudentId.getText();
         String sName=txtName.getText();
         String sAddress=txtAddress.getText();
         int contact=Integer.valueOf(txtContact.getText());
@@ -170,7 +215,6 @@ public class RegisterStudentViewController {
     }
 
     private void clearContent() {
-        txtId.clear();
         txtName.clear();
         txtContact.clear();
         txtAddress.clear();

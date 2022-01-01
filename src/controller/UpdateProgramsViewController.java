@@ -54,12 +54,19 @@ public class UpdateProgramsViewController {
                     Double.valueOf(txtProgramFee.getText())
             ))){
                 new Alert(Alert.AlertType.CONFIRMATION,"Updated").show();
+                clearContent();
             }else {
                 new Alert(Alert.AlertType.ERROR,"Update fail..!").show();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void clearContent() {
+        txtProgramName.clear();
+        txtProgramDuration.clear();
+        txtProgramFee.clear();
     }
 
     public void searchProgramOnAction(ActionEvent actionEvent) {

@@ -89,12 +89,10 @@ public class StudentDetailsViewController {
 
     private void getRegistrationDetails(String value) throws Exception {
         List<RegistrationDTO> regData=registrationBO.getAll();
-        String programId=null;
 
         for (RegistrationDTO temp:regData) {
             if (temp.getStudentDTO().getId().equals(cmbStudent.getValue())){
                 lblRegNumber.setText(String.valueOf(temp.getRegNo()));
-                programId=temp.getProgramDTO().getId();
                 obList.add(new StudentDeatilsTm(temp.getProgramDTO().getProgram()));
             }
         }

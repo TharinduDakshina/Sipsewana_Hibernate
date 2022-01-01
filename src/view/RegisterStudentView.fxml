@@ -59,7 +59,6 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="txtId" layoutX="133.0" layoutY="91.0" prefHeight="31.0" prefWidth="223.0" />
       <Label fx:id="lblRegNumber" alignment="CENTER" layoutX="474.0" layoutY="15.0" prefHeight="38.0" prefWidth="89.0" style="-fx-border-color: black; -fx-background-radius: 25; -fx-border-radius: 25;" text="000">
          <font>
             <Font name="System Bold" size="18.0" />
@@ -89,5 +88,15 @@
          </font>
       </Label>
       <JFXTextField fx:id="txtFee" layoutX="515.0" layoutY="327.0" prefHeight="31.0" prefWidth="223.0" />
+      <Label layoutX="405.0" layoutY="21.0" prefHeight="28.0" prefWidth="65.0" text="RegNo" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentId" alignment="CENTER" layoutX="133.0" layoutY="93.0" prefHeight="38.0" prefWidth="213.0" style="-fx-border-color: black; -fx-background-radius: 25; -fx-border-radius: 25;" text="S-001">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
