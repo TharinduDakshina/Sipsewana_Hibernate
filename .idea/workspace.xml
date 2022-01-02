@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="940437d4-626c-482f-91f7-ac058adcbd49" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/RegisterStudentViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/RegisterStudentViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/StudentDetailsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/StudentDetailsViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/UpdateProgramsViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/controller/UpdateProgramsViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/RegisterStudentView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SipsewanaInstitute(Hibernet)/view/RegisterStudentView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/RegisterStudentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterStudentViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StudentDetailsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentDetailsViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/UpdateProgramsViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/UpdateProgramsViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/RegisterStudentView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/RegisterStudentView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +127,8 @@
       <workItem from="1640972685001" duration="1755000" />
       <workItem from="1640974487377" duration="5139000" />
       <workItem from="1640979898588" duration="144000" />
-      <workItem from="1641009383500" duration="20019000" />
+      <workItem from="1641009383500" duration="20333000" />
+      <workItem from="1641101065649" duration="409000" />
     </task>
     <servers />
   </component>

@@ -215,6 +215,8 @@ public class RegisterStudentViewController {
     }
 
     private void clearContent() {
+        cmbProgramId.getItems().clear();
+        cmbCourses.getItems().clear();
         txtName.clear();
         txtContact.clear();
         txtAddress.clear();

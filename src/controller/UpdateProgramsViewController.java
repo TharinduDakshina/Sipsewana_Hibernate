@@ -67,6 +67,7 @@ public class UpdateProgramsViewController {
         txtProgramName.clear();
         txtProgramDuration.clear();
         txtProgramFee.clear();
+        cmbProgramsId.getItems().clear();
     }
 
     public void searchProgramOnAction(ActionEvent actionEvent) {

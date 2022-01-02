@@ -46,6 +46,7 @@ public class ProgramDetailsViewController {
 
 
     public void clearOnAction(ActionEvent event) {
+        cmbProgramId.getItems().clear();
         txtProgramDuration.clear();
         txtProgramFee.clear();
         txtProgramName.clear();

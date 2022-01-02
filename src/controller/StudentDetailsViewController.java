@@ -69,6 +69,7 @@ public class StudentDetailsViewController {
         txtGender.clear();
         lblRegNumber.setText("-");
         tblPrograms.getItems().clear();
+        cmbStudent.getItems().clear();
     }
 
 
